@@ -30,6 +30,7 @@ var students = [
   }
 ];
 
+//problem 1
 function secondLoop(arr) {
   arr.forEach(function(student) {
     console.log(student.age);
@@ -38,6 +39,7 @@ function secondLoop(arr) {
 
 secondLoop(students);
 
+//problem 2
 function thirdLoop(arr) {
   arr.forEach(function(student) {
     console.log(student.name + ", " + student.city);
@@ -45,5 +47,17 @@ function thirdLoop(arr) {
 }
 
 thirdLoop(students);
+
+//problem 3
+function fourthLoop(arr) {
+  arr.filter(function(student){
+    if (student.city === "Boulder") {
+    console.log(student.name + " is from " + student.city);
+    }
+  });
+
+}
+
+fourthLoop(students);
 
 
