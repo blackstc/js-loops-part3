@@ -60,4 +60,13 @@ function fourthLoop(arr) {
 
 fourthLoop(students);
 
+//problem 4
+function fithLoop(arr) {
+  arr.filter(function(student) {
+    if(student.age > 25) {
+      console.log(student.name + " is older than 25");
+    }
+  });
+}
 
+fithLoop(students);
